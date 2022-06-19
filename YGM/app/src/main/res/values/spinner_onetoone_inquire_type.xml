@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spinner_onetoone_inquire_type">
+        <item>선택</item>
+        <item>교환</item>
+        <item>환불</item>
+        <item>취소(출하 전 취소)</item>
+        <item>배송</item>
+        <item>불량/AS</item>
+        <item>주문/결제</item>
+        <item>상품/재입고</item>
+        <item>적립금</item>
+        <item>회원 관련</item>
+        <item>기타 문의</item>
+        <item>신고</item>
+    </string-array>
+</resources>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".LogIn.FindPWFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:text="비밀번호 찾기"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/check_PW">
+
+        <RadioButton
+            android:id="@+id/check_phoneNum_PW"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="80dp"
+            android:layout_marginLeft="80dp"
+            android:text="핸드폰 인증" />
+
+        <RadioButton
+            android:id="@+id/check_email_PW"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="이메일 인증" />
+    </RadioGroup>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/phone_find_pw">
+            <EditText
+                android:id="@+id/id_fragment_find_pw"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_margin="15dp"
+                android:background="@drawable/edittext_white"
+                android:hint="아이디 입력"
+                android:inputType="text"
+                android:imeOptions="actionDone"
+                android:layout_marginBottom="12dp"/>
+
+            <EditText
+                android:id="@+id/name_fragment_find_pw"
+                android:layout_width="match_parent"
+                android:layout_margin="15dp"
+                android:background="@drawable/edittext_white"
+                android:layout_height="60dp"
+                android:hint="이름 입력"
+                android:inputType="text"
+                android:imeOptions="actionDone"
+                android:layout_marginBottom="12dp"/>
+
+            <EditText
+                android:id="@+id/phone_fragment_find_pw"
+                android:layout_width="match_parent"
+                android:layout_margin="15dp"
+                android:background="@drawable/edittext_white"
+                android:layout_height="60dp"
+                android:inputType="text|number"
+                android:imeOptions="actionDone"
+                android:hint="휴대 전화 입력( - 제외 11자리)"
+                android:layout_marginBottom="12dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/email_find_pw">
+            <EditText
+                android:id="@+id/id_fragment_find_pw_email"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_margin="15dp"
+                android:background="@drawable/edittext_white"
+                android:hint="아이디 입력"
+                android:inputType="text"
+                android:imeOptions="actionDone"
+                android:layout_marginBottom="12dp"/>
+
+            <EditText
+                android:id="@+id/email_fragment_find_pw"
+                android:layout_width="match_parent"
+                android:layout_margin="15dp"
+                android:background="@drawable/edittext_white"
+                android:layout_height="60dp"
+                android:inputType="textEmailAddress"
+                android:imeOptions="actionDone"
+                android:hint="이메일 입력"
+                android:layout_marginBottom="12dp"/>
+        </LinearLayout>
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/find_pw_fragment_find_pw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:text="비밀번호 찾기"
+        android:textSize="25sp"
+        android:textColor="#ffffff"
+        android:layout_margin="15dp"
+        app:backgroundTint="#000000"
+        android:background="@drawable/button_shape"
+        />
+
+</LinearLayout>

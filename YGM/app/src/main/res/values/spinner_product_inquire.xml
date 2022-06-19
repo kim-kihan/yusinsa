@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spinner_product_inquire">
+        <item>선택해주세요</item>
+        <item>사이즈</item>
+        <item>배송</item>
+        <item>재입고</item>
+        <item>기타</item>
+    </string-array>
+</resources>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ygm">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".User"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.YGM"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".MyMenu.ServiceCenter.MembershipBodyActivity"></activity>
+        <activity android:name=".Payment.FindAddressActivity" />
+        <activity android:name=".MyMenu.Inquiry.OneToOneInquireActivity" />
+        <activity android:name=".LoadingActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".LogIn.LogInActivity" />
+        <activity android:name=".LogIn.RegistrationActivity" />
+        <activity android:name=".Home.EventActivity" />
+        <activity android:name=".Product.ProductActivity" />
+        <activity android:name=".Product.InquireActivity" />
+        <activity android:name=".Cart.CartActivity" />
+        <activity android:name=".Payment.PaymentActivity" />
+        <activity android:name=".MyMenu.OrderList.OrderListActivity" />
+        <activity android:name=".MyMenu.OrderList.WriteReviewActivity" />
+        <activity android:name=".MyMenu.Inquiry.ProductInquiryActivity" />
+        <activity android:name=".MyMenu.Inquiry.OneToOneInquiryActivity" />
+        <activity android:name=".MyMenu.ServiceCenter.NoticeActivity" />
+        <activity android:name=".MyMenu.ServiceCenter.FAQActivity" />
+        <activity android:name=".MyMenu.ServiceCenter.MembershipActivity" />
+        <activity android:name=".Home.PushAlarmActivity" />
+    </application>
+
+</manifest>

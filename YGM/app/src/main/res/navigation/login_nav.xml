@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_nav"
+    app:startDestination="@id/logInHomeFragment">
+
+    <fragment
+        android:id="@+id/logInHomeFragment"
+        android:name="com.example.ygm.LogIn.LogInHomeFragment"
+        android:label="fragment_log_in_home"
+        tools:layout="@layout/fragment_log_in_home" >
+        <action
+            android:id="@+id/action_logInHomeFragment_to_findIDFragment"
+            app:destination="@id/findIDFragment" />
+        <action
+            android:id="@+id/action_logInHomeFragment_to_findPWFragment"
+            app:destination="@id/findPWFragment" />
+        <action
+            android:id="@+id/action_logInHomeFragment_to_registrationFragment"
+            app:destination="@id/registrationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/findIDFragment"
+        android:name="com.example.ygm.LogIn.FindIDFragment"
+        android:label="fragment_find_id"
+        tools:layout="@layout/fragment_find_id" >
+        <action
+            android:id="@+id/action_findIDFragment_to_logInHomeFragment"
+            app:destination="@id/logInHomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/findPWFragment"
+        android:name="com.example.ygm.LogIn.FindPWFragment"
+        android:label="fragment_find_pw"
+        tools:layout="@layout/fragment_find_pw" >
+        <action
+            android:id="@+id/action_findPWFragment_to_logInHomeFragment"
+            app:destination="@id/logInHomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registrationFragment"
+        android:name="com.example.ygm.LogIn.RegistrationFragment"
+        android:label="fragment_registration"
+        tools:layout="@layout/fragment_registration" >
+        <action
+            android:id="@+id/action_registrationFragment_to_logInHomeFragment"
+            app:destination="@id/logInHomeFragment" />
+    </fragment><action android:id="@+id/action_global_registrationFragment" app:destination="@id/registrationFragment"/>
+</navigation>

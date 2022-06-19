@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".LogIn.RegistrationActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="35dp"
+                android:layout_weight="0"
+                tools:ignore="VectorDrawableCompat" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                tools:ignore="VectorDrawableCompat"
+                tools:srcCompat="@drawable/login_logo" />
+
+            <TextView
+                android:id="@+id/fragment_registration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="30dp"
+                android:textColor="#000000"
+                android:text="회원가입"
+                android:layout_marginBottom="25dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:paddingLeft="8dp"
+                android:text="아이디"
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/id_fragment_registration"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="15dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/edittext_white"
+                android:hint="아이디 입력(5~11자)"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:paddingLeft="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:paddingLeft="8dp"
+                android:text="비밀번호"
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/pw_fragment_registration"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="15dp"
+                android:background="@drawable/edittext_white"
+                android:hint=" 비밀번호(숫자 또는 영문을 포함)"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:paddingLeft="8dp" />
+
+            <EditText
+                android:id="@+id/pw_check_fragment_registration"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="15dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/edittext_white"
+                android:hint=" 비밀번호 확인"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:paddingLeft="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:paddingLeft="8dp"
+                android:text="이름"
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/name_fragment_registration"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="15dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/edittext_white"
+                android:hint="이름 입력"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:paddingLeft="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:paddingLeft="8dp"
+                android:text="이메일"
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/email_fragment_registration"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="15dp"
+                android:layout_marginBottom="22dp"
+                android:background="@drawable/edittext_white"
+                android:hint=" 이메일"
+                android:imeOptions="actionDone"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_weight="0"
+                android:paddingLeft="8dp"
+                android:text="휴대폰 번호"
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/phone_fragment_registration"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="15dp"
+                android:layout_marginBottom="19dp"
+                android:background="@drawable/edittext_white"
+                android:hint=" - 제외 11자리"
+                android:imeOptions="actionDone"
+                android:inputType="text|number"
+                android:paddingLeft="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_weight="0"
+                android:paddingLeft="8dp"
+                android:text="생년월일"
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/birth_fragment_registration"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="15dp"
+                android:layout_marginBottom="19dp"
+                android:background="@drawable/edittext_white"
+                android:hint="생년월일 ex) 1997-01-02"
+                android:imeOptions="actionDone"
+                android:inputType="text|number"
+                android:paddingLeft="8dp" />
+
+            <Button
+                android:id="@+id/done_fragment_registration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:layout_weight="0"
+                android:background="@drawable/button_shape"
+                android:text="가입완료"
+                android:textColor="#ffffff"
+                android:textSize="25sp"
+                app:backgroundTint="#000000" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

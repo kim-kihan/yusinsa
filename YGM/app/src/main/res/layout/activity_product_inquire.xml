@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Product.InquireActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar_product_inquire"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#000000"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="?attr/actionBarTheme"
+                app:titleTextColor="#FFFFFF">
+
+                <ImageButton
+                    android:id="@+id/home_product"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:background="#090909"
+                    android:src="@drawable/outline_home_white_18" />
+
+                <ImageButton
+                    android:id="@+id/back_product"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:background="#070707"
+                    android:src="@drawable/abc_vector_test" />
+
+            </androidx.appcompat.widget.Toolbar>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="111dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/image_product_inquire"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp" />
+
+                    <TextView
+                        android:id="@+id/title_product_product_inquire"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="TextView" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/title_category_product_inquire"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:text="문의 유형" />
+
+                    <Spinner
+                        android:id="@+id/category_inquire_product_inquire"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:background="@drawable/edittext_white"
+                        android:entries="@array/spinner_product_inquire"
+                        android:padding="10dp" />
+
+                    <TextView
+                        android:id="@+id/title_title_inquire_product_inquire"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:text="제목" />
+
+                    <EditText
+                        android:id="@+id/title_inquire_product_inquire"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:background="@drawable/edittext_white"
+                        android:clickable="false"
+                        android:ems="10"
+                        android:hint="15자 이내 입력"
+                        android:imeOptions="actionDone"
+                        android:inputType="textPersonName"
+                        android:padding="10dp" />
+
+                    <TextView
+                        android:id="@+id/title_content_inquire_product_inquire"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:text="내용" />
+
+                    <EditText
+                        android:id="@+id/content_inquire_product_inquire"
+                        android:layout_width="match_parent"
+                        android:layout_height="202dp"
+                        android:layout_margin="15dp"
+                        android:background="@drawable/edittext_white"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:padding="10dp" />
+
+                    <TextView
+                        android:id="@+id/title_photo_inquire_product_inquire"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:text="사진" />
+
+
+                    <ImageView
+                        android:id="@+id/photo_inquire_product_inquire"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        tools:src="@tools:sample/avatars" />
+
+                    <Button
+                        android:id="@+id/button_photo_product_inquire"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:background="@drawable/button_shape"
+                        android:text="Button"
+                        android:textColor="#FFFFFF"
+                        app:backgroundTint="#000000" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="- 파일명에 한글, 영문, 숫자을 제외한 특수문자 및 공백이 사용된 경우 파일 첨부가 되지 않습니다." />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="- 이미지 크기가 2MB를 초과 시 업로드 되지 않습니다." />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/cancel_product_inquire"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/button_shape"
+                            android:text="취소"
+                            app:backgroundTint="#C6C4C4"
+                            app:iconTint="#FFFFFF" />
+
+                        <Button
+                            android:id="@+id/confirm_product_inquire"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/button_shape"
+                            android:text="등록"
+                            android:textColor="#FFFFFF"
+                            app:backgroundTint="#050505" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>
